@@ -4,7 +4,7 @@ require( 'dotenv' ).config();
 
 switch ( process.env.ELEVENTY_ENV ) {
 	case 'development':
-		siteurl = 'http://localhost:8080/';
+		siteurl = '/';
 	break;
 }
 

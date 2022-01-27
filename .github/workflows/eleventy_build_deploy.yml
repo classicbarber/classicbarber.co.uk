@@ -7,9 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Build
-        uses: TartanLlama/actions-eleventy@v1.1
+        uses: TartanLlama/actions-eleventy@v1.3
         with:
-          args: --output dist
+          args: --input ./src/
           install_dependencies: true
 
       - name: Deploy
@@ -18,21 +18,8 @@ jobs:
           server: ${{ secrets.FTP_CONNECTION }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/
+          local-dir: ./_site/
           server-dir: ./public_html/
+          state-name: ../.ftp-deploy-sync-state.json
           log-level: verbose
           dry-run: false
-          exclude: '
-            - .git*
-            - **/.git*
-            - **/.git*/**
-            - **/node_modules/**
-            - **/.env
-            - **/box.json
-            - **/server.json
-            - **/tests/**
-            - **/testbox/**
-            - **/resources/**
-            - **/_assets/**
-            - **/WEB-INF/**
-            '
