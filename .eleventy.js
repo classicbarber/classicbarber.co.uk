@@ -2,13 +2,13 @@ module.exports = function( eleventyConfig ) {
 	eleventyConfig.setQuietMode( true );
 	eleventyConfig.setTemplateFormats( 'html,md' );
 
-	eleventyConfig.addPassthroughCopy( 'css' );
-	eleventyConfig.addPassthroughCopy( 'fonts' );
-	eleventyConfig.addPassthroughCopy( 'image' );
-	eleventyConfig.addPassthroughCopy( 'js' );
+	eleventyConfig.addPassthroughCopy( './src/css' );
+	eleventyConfig.addPassthroughCopy( './src/fonts' );
+	eleventyConfig.addPassthroughCopy( './src/image' );
+	eleventyConfig.addPassthroughCopy( './src/js' );
 
-	eleventyConfig.addPassthroughCopy( 'robots.txt' );
-	eleventyConfig.addPassthroughCopy( 'sitemap.xml' );
+	eleventyConfig.addPassthroughCopy( './src/robots.txt' );
+	eleventyConfig.addPassthroughCopy( './src/sitemap.xml' );
 
 	eleventyConfig.addFilter( 'dump', function( anything ) {
 		console.log( 'dump:', anything );
