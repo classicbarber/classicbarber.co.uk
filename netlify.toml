@@ -1,11 +1,11 @@
-[build] # default master branch
-  publish = "_site/"
-  command = "ELEVENTY_ENV=production eleventy"
+[build] # default branch
+  publish = '_site/'
+  command = 'npm run build'
   environment = { ELEVENTY_ENV = 'production' } # to enable Eleventy to know the environment
 
-[context.preview] # 'preview' is the branch name
-  publish = "_site/"
-  command = "ELEVENTY_ENV=preview eleventy"
+[context.preview] # preview branch
+  publish = '_site/'
+  command = 'npm run build'
   environment = { ELEVENTY_ENV = 'production' } # to enable Eleventy to know the environment
 
 # https://github.com/netlify-labs/netlify-plugin-sitemap
