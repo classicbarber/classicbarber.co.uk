@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/classicbarber/classicbarber.co.uk#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0",
     "dotenv": "^9.0.0"
-  }
+  },
+  "dependencies": {}
 }
