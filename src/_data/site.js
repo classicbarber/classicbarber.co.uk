@@ -1,10 +1,10 @@
-let siteurl = 'https://www.classicbarber.co.uk/';
+let siteurl = 'https://www.classicbarber.co.uk';
 
 require( 'dotenv' ).config();
 
 switch ( process.env.ELEVENTY_ENV ) {
 	case 'development':
-		siteurl = '/';
+		siteurl = 'http://localhost:8080';
 	break;
 }
 
