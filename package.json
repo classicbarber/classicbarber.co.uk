@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf ./_site && npm run build:eleventy",
-    "build:eleventy": "npx @11ty/eleventy --input ./src/",
+    "build:eleventy": "GOOGLE_MAPS_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }} npx @11ty/eleventy --input ./src/",
     "dev": "rm -rf ./_site && npm run dev:eleventy",
     "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve"
   },
