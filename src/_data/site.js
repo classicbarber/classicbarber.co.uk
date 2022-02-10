@@ -11,6 +11,7 @@ switch ( process.env.ELEVENTY_ENV ) {
 module.exports = {
 	siteurl: siteurl
 	,test1: process.env.FTP_CONNECTION
+	,test2: process.env.NODE_ENV
 	,title: 'The Classic Barber of Hertford'
 	,environment: process.env.ELEVENTY_ENV
 	,mapAPIKey: process.env.GOOGLE_MAPS_API_KEY
