@@ -1,0 +1,12 @@
+---
+layout: layouts/blank.html
+eleventyExcludeFromCollections: true
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	{%- for page in collections.all %}
+		{%- include "sitemap-entry.xml" entry: page.data %}
+	{%- endfor %}
+</urlset>
