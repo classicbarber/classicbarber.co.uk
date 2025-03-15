@@ -18,33 +18,5 @@ lastmod:	2020-06-15
 </div>
 
 <script>
-    function initMap() {
-        var contentString = '<div id="window">'+
-			'<strong>The Classic Barber</strong><br>'+
-			'23b Old Cross<br>'+
-			'Hertford<br>'+
-			'SG14 1RE<br>'+
-			'Tel: 01992 505 527<br>'+
-			'<div>';
-
-		var location = { lat: 51.797566, lng: -0.080739 };
-
-        var map = new google.maps.Map( document.getElementById( 'map' ), {
-            zoom: 15,
-            center: location
-        } );
-
-        var marker = new google.maps.Marker( {
-            position: location,
-            map: map
-        } );
-
-        var infowindow = new google.maps.InfoWindow( {
-            content: contentString
-        } );
-
-        infowindow.open( map, marker );
-    }
+	displayMap( 'map', '51.797566', '-0.080739', 16 );
 </script>
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.mapAPIKey }}&callback=initMap"></script>
