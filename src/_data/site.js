@@ -12,5 +12,4 @@ module.exports = {
 	siteurl: siteurl
 	,title: 'The Classic Barber of Hertford'
 	,environment: process.env.ELEVENTY_ENV
-	,mapAPIKey: process.env.GOOGLE_MAPS_API_KEY
 };
