@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# if domain isn't www.classicbarber.co.uk
+RewriteCond %{HTTP_HOST} !^www\.classicbarber\.co\.uk$ [NC]
+
+# forward it to www.classicbarber.co.uk
+RewriteRule ^(.*)$ https://www.classicbarber.co.uk/$1 [R=301,L]

@@ -1,0 +1,163 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>About Us | The Classic Barber of Hertford</title>
+		<meta name="keywords" content="Barber, Barbershop, Hairdresser, Hertford, Hertfordshire, American Crew, NHF, National Hairdressers Federation">
+		<meta name="description" content="Best barbershop in Hertford catering for the young lads of the area.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+		<base href="https://www.classicbarber.co.uk">
+
+		<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<style>
+			body {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+		</style>
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+		crossorigin=""/>
+
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+		crossorigin=""></script>
+
+		<script>
+			function displayMap( mapID, lat, lgn, zoom ) {
+				let map = L.map( `${ mapID }` ).setView( [ lat, lgn ], zoom );
+
+				let marker = L.marker( [ lat, lgn ] ).addTo( map );
+
+				L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+					maxZoom: zoom + 3,
+					attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+				} ).addTo( map );
+			}
+		</script>
+	</head>
+
+	<body>
+		<!--[if lt IE 8]>
+				<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<a href="/">
+						<img name="logo" src="image/logo.gif" width="391" height="77" border="0" alt="The Classic Barber Hertford" title="The Classic Barber Hertford" class="img-responsive" />
+					</a>
+				</div>
+
+				<div class="col-md-6 hidden-xs">
+					<address class="text-right">
+						23b Old Cross<br>
+						HERTFORD<br>
+						Hertfordshire<br>
+						SG14 1RE<br>
+						Tel: 01992 505 527
+					</address>
+				</div>
+
+				<div class="col-xs-12 visible-xs-block">
+					<hr>
+
+					<address class="text-center">
+						23b Old Cross,
+						HERTFORD,
+						SG14 1RE<br>
+						Tel: 01992 505 527
+					</address>
+				</div>
+			</div>
+		</div>
+
+		
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h1>About Us</h1>
+
+			<img src="image/chairs.jpg" alt="Phil and John's cutting chairs" title="Phil and John's cutting chairs" width="188" height="149" class="pull-right left-margin hidden-xs">
+
+			<p>
+				Phil and Paul set up their first shop on the edge of Parliament Square Hertford in September 1995 after learning their trade at college as well as on the job.
+			</p>
+
+			<p>
+				Their younger style and approach was an instant success. Soon punters were queuing out the door on a Saturday morning! It was clear that they had hit on a style that was appealing to the lads of Hertford. Soon it was time to move.
+			</p>
+
+			<p>
+				In 1998 the old Pharaoh confectionery and tobacconist shop in Old Cross came onto the market. After long negotiations with local planners and a six week break between leaving the old shop and the builders moving out of the new, the lads were in business again.
+			</p>
+
+			<p>
+				Retaining most of the original features of the building, as well as the same 1914 script style for their signboard, the shop mixes the old with the new. The sharp black and white tiling, coffee machine, chilled water and modern lighting contrast stylishly with the bare brick fireplace and stripped wood flooring.
+			</p>
+
+			<a href="http://www.the-nhf.org/" target="_blank">
+				<img src="image/nhf.gif" alt="Members of the National Hairdressers' Federation" width="188" height="105" border="0" class="pull-right left-margin hidden-xs" title="Members of the National Hairdressers' Federation">
+			</a>
+
+			<p>
+				Shortly after taking up residence in their smart new shop, the boys signed up to promote the quality haircare products made by American Crew in the States. The complete range is used on customers as well being available for sale over the counter.
+			</p>
+
+			<p>
+				If you value a younger professional atmosphere, the style of your hair, the products used and sold, then phone up and get down to the Classic Barber.
+			</p>
+
+			<p>
+				Should you wish to make or cancel an appointment, please make contact <a href="mailto:info@classicbarber.co.uk?subject=Appointment%20Enquiry&body=Hi,%0D%0A%0D%0APlease%20keep%20me%20informed%20on%20opening%20arrangements.%0D%0A%0D%0AName:%20%0D%0ANumber:%20%0D%0AEmail:%20%0D%0ABarber:%20%0D%0A">by this email link</a>.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+		<div class="container">
+			<hr>
+
+			<footer class="text-center">
+				<p>
+					<a href="about/">about us</a> | <a href="findus/">find us</a> | <a href="mailto:info@classicbarber.co.uk">email us</a> | <a href="hours/">hours</a> | <a href="price/">price list</a> | <a href="product/">products</a> | <a href="recruitment/">jobs</a>
+				</p>
+
+				<p>&copy; The Classic Barber 1995-<script language="JavaScript" type="text/javascript">var dateNow = new Date();document.write(dateNow.getFullYear());</script></p>
+
+				<p>Design, development and hosting by <a href="https://www.infoweb.co.uk/" target="_blank">infoWEB</a></p>
+			</footer>
+		</div>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+		<script src="js/vendor/bootstrap.min.js"></script>
+
+		<script src="js/main.js"></script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-893499-16', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>

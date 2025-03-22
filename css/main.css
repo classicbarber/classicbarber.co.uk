@@ -1,0 +1,7 @@
+p, table, address, h1, h2 {
+	font-family: 'Armata', sans-serif;
+}
+
+.left-margin {
+	margin: 0 0 0 50px;
+}
