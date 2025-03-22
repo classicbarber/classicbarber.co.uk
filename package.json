@@ -4,24 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "rm -rf ./_site && npm run dev:eleventy",
+    "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve",
     "build": "rm -rf ./_site && npm run build:eleventy",
-    "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/",
-    "dev": "rm -rf ./_site && npm run dev:eleventy",
-    "dev:eleventy": "npx @11ty/eleventy --input ./src/ --serve"
+    "build:eleventy": "npx @11ty/eleventy --input ./src/ --output ./public/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://classicbarber@github.com/classicbarber/classicbarber.co.uk.git"
+    "url": "git+https://classicbarber@github.com/classicbarber/www.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/classicbarber/classicbarber.co.uk/issues"
+    "url": "https://github.com/classicbarber/www/issues"
   },
-  "homepage": "https://github.com/classicbarber/classicbarber.co.uk#readme",
+  "homepage": "https://github.com/classicbarber/www#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "dotenv": "^9.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "dotenv": "^16.4.7"
   }
 }
