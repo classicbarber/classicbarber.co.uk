@@ -2,7 +2,7 @@ name: Build and Deploy
 
 on:
   push:
-    branches: ['main']
+    branches: ['gh-pages']
 
 jobs:
   build:
@@ -34,4 +34,3 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          cname: www.classicbarber.co.uk
